@@ -1,17 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
 import Header from "../components/Header";
-import { Box } from "@chakra-ui/react";
-
-const inter = Inter({ subsets: ['latin'] })
+import { Box, Image } from "@chakra-ui/react";
 
 export default function Home() {
   return (
     <Box>
       <Header />
-      {/* Add any additional page content here */}
+      {<Image src="profile-img.png" alt="Profile Image" />}
     </Box>
   );
 }
