@@ -5,9 +5,11 @@ import { useColorMode } from "@chakra-ui/react";
 function Header() {
   const { colorMode } = useColorMode();
   return (
-    <Box className="w-full h-20 bg-black fixed filter: backdrop-blur-[20px]" bg={colorMode === "dark" ? "black" : "white"}>
-      <Flex>
-        <Heading>My Website</Heading>
+    <Box
+      className="h-full flex flex-col w-16 bg-black fixed top-0 right-0 border-solid border-violet-600 border-l-4"
+      bg={colorMode === "dark" ? "black" : "white"}
+    >
+      <Flex className="flex-col h-full">
         <Spacer />
         <ColorModeSwitcher />
       </Flex>

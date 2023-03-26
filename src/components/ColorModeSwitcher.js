@@ -7,7 +7,7 @@ function ColorModeSwitcher() {
 
   return (
     <IconButton
-      icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+      icon={colorMode === "light" ? <MoonIcon boxSize={6}/> : <SunIcon boxSize={6}/>}
       aria-label={colorMode === "light" ? "Switch to dark mode" : "Switch to light mode"}
       onClick={toggleColorMode}
       bg="transparent"
