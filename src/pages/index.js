@@ -1,7 +1,10 @@
+import About from "@/components/About";
 import NavBar from "../components/NavBar";
 import { Box, Image, Text, Tooltip } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import Portfolio from "@/components/Portfolio";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const { colorMode } = useColorMode();
@@ -15,9 +18,9 @@ export default function Home() {
     deleteSpeed: 80
   })
   return (
-    <Box>
+    <Box h="100vh">
       <NavBar />
-      <Box className="flex justify-start items-center w-full h-screen">
+      <Box className="flex justify-start items-center h-full">
         <Box className="relative">
           <Image
             src="profile-img.webp"
@@ -33,10 +36,13 @@ export default function Home() {
         <Box>
           <Box className="flex flex-col items-center mb-56 ml-40">
             <Text className="text-9xl font-bold p-12" bgGradient='linear(to-l, #6927d9, #d446ab)' bgClip='text'>Joaquín Alejandro Borges Borio</Text>
-            <Text className="text-6xl font-bold pb-3" bgGradient='linear(to-l, #74b7ff, #2ac751)' bgClip='text'>- I'm a {text}<Cursor cursorColor='#86909e' /></Text>
+            <Text className="text-6xl font-bold pb-3 ml-16 self-start" bgGradient='linear(to-l, #74b7ff, #2ac751)' bgClip='text'>- I'm a {text}<Cursor cursorColor='#86909e' /></Text>
           </Box>
         </Box>
       </Box>
+      <About/>
+      <Portfolio/>
+      <Contact/>
     </Box>
   );
 }
