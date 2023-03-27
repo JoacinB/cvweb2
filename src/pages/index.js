@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import { Box, Image, Text } from "@chakra-ui/react";
+import NavBar from "../components/NavBar";
+import { Box, Image, Text, Tooltip } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
@@ -16,11 +16,11 @@ export default function Home() {
   })
   return (
     <Box>
-      <Header />
+      <NavBar />
       <Box className="flex justify-start items-center w-full h-screen">
         <Box className="relative">
           <Image
-            src="profile-img.png"
+            src="profile-img.webp"
             alt="Profile Image"
             className={`rounded-[32px] ${shadowColor[colorMode]} ml-28`}
           />
