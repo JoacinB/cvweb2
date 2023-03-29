@@ -24,7 +24,7 @@ export default function Home() {
           />
         </Box>
         <Box
-          className={`absolute top-0 h-full flex flex-col -z-[1] w-80 ${
+          className={`absolute top-0 h-screen rounded-br-full flex flex-col -z-[1] w-80 ${
             colorMode === "dark" ? "bg-gray-800" : "bg-gray-300"
           }`}
         />
