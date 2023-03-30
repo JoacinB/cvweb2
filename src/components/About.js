@@ -9,11 +9,11 @@ export default function About() {
       bg={colorMode === "dark" ? "black" : "white"}
       color={textColor}
       px={8}
-      py={20}
+      py={5}
       h={["auto", "auto", "auto", "100vh"]}
     >
       <Box mx="auto" textAlign="center">
-        <Text className="mb-4 text-3xl font-semibold 2xl:text-6xl 2xl:font-semibold xl:text-5xl xl:font-semibold lg:text-4xl lg:font-semibold md:text-3xl md:font-semibold sm:text-3xl sm:font-semibold">
+        <Text className="mb-4 text-3xl font-semibold 2xl:text-5xl 2xl:font-semibold xl:text-4xl xl:font-semibold lg:text-4xl lg:font-semibold md:text-3xl md:font-semibold sm:text-3xl sm:font-semibold">
           About Me
         </Text>
         <Text fontSize="xl" mb={8}>
