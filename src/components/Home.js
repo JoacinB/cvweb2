@@ -45,7 +45,7 @@ export default function Home() {
 
 
 
-      <Box className="flex flex-col items-center flex-1">
+      <Box className="flex flex-col items-center justify-center flex-1">
         <Text
           className="text-2xl font-bold p-12 2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl"
           bgGradient="linear(to-l, #6927d9, #d446ab)"

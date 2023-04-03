@@ -1,8 +1,11 @@
-import { Box, Heading, Text, useColorMode } from "@chakra-ui/react";
+import { Box, Flex, ListItem, Text, UnorderedList, useColorMode } from "@chakra-ui/react";
+import { differenceInYears } from "date-fns";
 
 export default function About() {
   const { colorMode } = useColorMode();
   const textColor = colorMode === "dark" ? "white" : "gray.800";
+  const Birthday = new Date(2002, 1, 8);
+  const age = differenceInYears(new Date(), Birthday);
 
   return (
     <Box
@@ -12,23 +15,38 @@ export default function About() {
       py={5}
       h={["auto", "auto", "auto", "100vh"]}
     >
-      <Box mx="auto" textAlign="center">
-        <Text className="mb-4 text-3xl font-semibold 2xl:text-5xl 2xl:font-semibold xl:text-4xl xl:font-semibold lg:text-4xl lg:font-semibold md:text-3xl md:font-semibold sm:text-3xl sm:font-semibold">
+      <Box className="mx-auto text-center">
+        <Text className="mb-20 text-3xl font-bold uppercase xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl">
           About Me
         </Text>
-        <Text fontSize="xl" mb={8}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          gravida justo ac tincidunt consectetur. Praesent ultrices ullamcorper
-          dolor, at imperdiet odio fermentum sit amet. Sed viverra commodo eros
-          id semper.
-        </Text>
-        <Text fontSize="xl">
-          Fusce ac mauris ipsum. Integer rutrum, lorem et commodo lobortis,
-          enim libero pellentesque orci, non pharetra nulla justo a nulla.
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-          posuere cubilia curae; Vestibulum sed purus nisl. Sed euismod lacus ac
-          dolor commodo, sit amet imperdiet nisl ultrices.
-        </Text>
+        <Flex className="justify-between max-w-[1200px] mx-auto">
+          <Box w="50%" className=" text-left">
+            <Box>
+              <Text className="mb-4 text-2xl font-bold uppercase xl:text-2xl lg:text-2xl md:text-2xl sm:text-2xl">
+                Personal Info
+              </Text>
+              <UnorderedList listStyleType='none' className="text-xl font-semibold inline-block">
+                <ListItem className="mb-4 text-lg">First Name: Joaquín</ListItem>
+                <ListItem className="mb-4 text-lg">Age: {age} Years</ListItem>
+                <ListItem className="mb-4 text-lg">Phone: +598 91339424</ListItem>
+                <ListItem className="mb-4 text-lg">Email: joaquinborgesborio@gmail.com</ListItem>
+              </UnorderedList>
+              <UnorderedList listStyleType='none' className="text-xl font-semibold inline-block">
+                <ListItem className="mb-4 text-lg">Last Name: Borges</ListItem>
+                <ListItem className="mb-4 text-lg">Nationality: Uruguayan</ListItem>
+                <ListItem className="mb-4 text-lg">Address: Juan Paullier 1783</ListItem>
+                <ListItem className="mb-4 text-lg">City: Montevideo</ListItem>
+                
+              </UnorderedList>
+            </Box>
+          </Box>
+          <Box w="50%">
+            {
+              /* Content for the second div */
+              <Text className="bg-[#111111]">Personal Info</Text>
+            }
+          </Box>
+        </Flex>
       </Box>
     </Box>
   );
