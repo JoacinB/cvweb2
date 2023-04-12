@@ -14,7 +14,7 @@ function NavBar() {
       className="h-full flex flex-col w-16 fixed top-0 right-0 bg-transparent"
     >
       <Flex className="flex-col h-full relative justify-center items-center">
-        <Link href="#home-section">
+        {/* <Link href="#home-section">
           <Tooltip
             label="Home"
             aria-label="Home"
@@ -89,7 +89,7 @@ function NavBar() {
               icon={<Icon as={BiEnvelope} boxSize={7} />}
             />
           </Tooltip>
-        </Link>
+        </Link> */}
         <ColorModeSwitcher />
       </Flex>
     </Box>

@@ -16,17 +16,17 @@ export default function About() {
       h={["auto", "auto", "auto", "100vh"]}
     >
       <Box className="mx-auto text-center">
-        <Text className="mb-20 text-3xl font-bold uppercase xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl">
+        <Text className="mb-20 text-3xl font-bold xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl" >
           About Me
         </Text>
-        <Flex className="justify-between max-w-[1200px] mx-auto">
+        <Flex className="justify-between mx-auto">
           <Box w="50%" className=" text-left">
             <Box>
               <Text className="mb-4 text-2xl font-bold uppercase xl:text-2xl lg:text-2xl md:text-2xl sm:text-2xl">
                 Personal Info
               </Text>
               <UnorderedList listStyleType='none' className="text-xl font-semibold inline-block">
-                <ListItem className="mb-4 text-lg">First Name: Joaquín</ListItem>
+                <ListItem className="mb-4 text-lg">First Name: <span className="">Joaquín</span></ListItem>
                 <ListItem className="mb-4 text-lg">Age: {age} Years</ListItem>
                 <ListItem className="mb-4 text-lg">Phone: +598 91339424</ListItem>
                 <ListItem className="mb-4 text-lg">Email: joaquinborgesborio@gmail.com</ListItem>
