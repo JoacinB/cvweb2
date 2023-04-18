@@ -1,11 +1,6 @@
 import { Box, Flex, IconButton, Tooltip, Icon } from "@chakra-ui/react";
 import ColorModeSwitcher from "./ColorModeSwitcher";
 import { useColorMode } from "@chakra-ui/react";
-import { BiHome } from "react-icons/bi";
-import { BiBriefcase } from "react-icons/bi";
-import { BiUser } from "react-icons/bi";
-import { BiEnvelope } from "react-icons/bi";
-import Link from "next/link";
 
 function NavBar() {
   const { colorMode } = useColorMode();
