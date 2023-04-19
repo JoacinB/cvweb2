@@ -105,11 +105,12 @@ export default function About() {
         <Text className="mt-20 mb-10 text-3xl font-bold xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl">
           Skills
         </Text>
-        <Stack className="justify-center items-center flex-wrap"
+        <Stack
+          className="justify-center items-center flex-wrap font-medium xl:max-w-[1320px] mx-auto"
           direction="row"
-          spacing={7}
         >
-          <Box className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
           >
             <img
               src="https://img.icons8.com/color/240/000000/html-5--v1.png"
@@ -119,90 +120,194 @@ export default function About() {
             HTML5
           </Box>
 
-          <Box className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
           >
             <img
               src="https://img.icons8.com/color/240/000000/css3.png"
               alt="CSS"
-              width={96}
-              height={96}
+              className="w-24 h-24"
             />
             CSS3
           </Box>
 
-          <Box className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
           >
             <img
               src="https://img.icons8.com/color/240/000000/javascript--v1.png"
               alt="JavaScript"
-              width={96}
-              height={96}
+              className="w-24 h-24"
             />
             JavaScript
           </Box>
 
-          <Box className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
           >
             <img
               src="https://img.icons8.com/color/240/000000/bootstrap.png"
               alt="Bootstrap"
-              width={96}
-              height={96}
+              className="w-24 h-24"
             />
             Bootstrap
           </Box>
 
-          <Box className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
           >
             <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iOTYiIGhlaWdodD0iOTYiCnZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgICA8cGF0aCBkPSJNMTAuOSwyLjFjLTQuNiwwLjUtOC4zLDQuMi04LjgsOC43Yy0wLjUsNC43LDIuMiw4LjksNi4zLDEwLjVDOC43LDIxLjQsOSwyMS4yLDksMjAuOHYtMS42YzAsMC0wLjQsMC4xLTAuOSwwLjEgYy0xLjQsMC0yLTEuMi0yLjEtMS45Yy0wLjEtMC40LTAuMy0wLjctMC42LTFDNS4xLDE2LjMsNSwxNi4zLDUsMTYuMkM1LDE2LDUuMywxNiw1LjQsMTZjMC42LDAsMS4xLDAuNywxLjMsMWMwLjUsMC44LDEuMSwxLDEuNCwxIGMwLjQsMCwwLjctMC4xLDAuOS0wLjJjMC4xLTAuNywwLjQtMS40LDEtMS44Yy0yLjMtMC41LTQtMS44LTQtNGMwLTEuMSwwLjUtMi4yLDEuMi0zQzcuMSw4LjgsNyw4LjMsNyw3LjZDNyw3LjIsNyw2LjYsNy4zLDYgYzAsMCwxLjQsMCwyLjgsMS4zQzEwLjYsNy4xLDExLjMsNywxMiw3czEuNCwwLjEsMiwwLjNDMTUuMyw2LDE2LjgsNiwxNi44LDZDMTcsNi42LDE3LDcuMiwxNyw3LjZjMCwwLjgtMC4xLDEuMi0wLjIsMS40IGMwLjcsMC44LDEuMiwxLjgsMS4yLDNjMCwyLjItMS43LDMuNS00LDRjMC42LDAuNSwxLDEuNCwxLDIuM3YyLjZjMCwwLjMsMC4zLDAuNiwwLjcsMC41YzMuNy0xLjUsNi4zLTUuMSw2LjMtOS4zIEMyMiw2LjEsMTYuOSwxLjQsMTAuOSwyLjF6Ij48L3BhdGg+Cjwvc3ZnPg=="
+              src={
+                colorMode === "light"
+                  ? "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iOTYiIGhlaWdodD0iOTYiCnZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgICA8cGF0aCBkPSJNMTAuOSwyLjFjLTQuNiwwLjUtOC4zLDQuMi04LjgsOC43Yy0wLjUsNC43LDIuMiw4LjksNi4zLDEwLjVDOC43LDIxLjQsOSwyMS4yLDksMjAuOHYtMS42YzAsMC0wLjQsMC4xLTAuOSwwLjEgYy0xLjQsMC0yLTEuMi0yLjEtMS45Yy0wLjEtMC40LTAuMy0wLjctMC42LTFDNS4xLDE2LjMsNSwxNi4zLDUsMTYuMkM1LDE2LDUuMywxNiw1LjQsMTZjMC42LDAsMS4xLDAuNywxLjMsMWMwLjUsMC44LDEuMSwxLDEuNCwxIGMwLjQsMCwwLjctMC4xLDAuOS0wLjJjMC4xLTAuNywwLjQtMS40LDEtMS44Yy0yLjMtMC41LTQtMS44LTQtNGMwLTEuMSwwLjUtMi4yLDEuMi0zQzcuMSw4LjgsNyw4LjMsNyw3LjZDNyw3LjIsNyw2LjYsNy4zLDYgYzAsMCwxLjQsMCwyLjgsMS4zQzEwLjYsNy4xLDExLjMsNywxMiw3czEuNCwwLjEsMiwwLjNDMTUuMyw2LDE2LjgsNiwxNi44LDZDMTcsNi42LDE3LDcuMiwxNyw3LjZjMCwwLjgtMC4xLDEuMi0wLjIsMS40IGMwLjcsMC44LDEuMiwxLjgsMS4yLDNjMCwyLjItMS43LDMuNS00LDRjMC42LDAuNSwxLDEuNCwxLDIuM3YyLjZjMCwwLjMsMC4zLDAuNiwwLjcsMC41YzMuNy0xLjUsNi4zLTUuMSw2LjMtOS4zIEMyMiw2LjEsMTYuOSwxLjQsMTAuOSwyLjF6Ij48L3BhdGg+Cjwvc3ZnPg=="
+                  : "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iOTYiIGhlaWdodD0iOTYiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgogICAgPHBhdGggZD0iTTEwLjksMi4xYy00LjYsMC41LTguMyw0LjItOC44LDguN2MtMC41LDQuNywyLjIsOC45LDYuMywxMC41QzguNywyMS40LDksMjEuMiw5LDIwLjh2LTEuNmMwLDAtMC40LDAuMS0wLjksMC4xIGMtMS40LDAtMi0xLjItMi4xLTEuOWMtMC4xLTAuNC0wLjMtMC43LTAuNi0xQzUuMSwxNi4zLDUsMTYuMyw1LDE2LjJDNSwxNiw1LjMsMTYsNS40LDE2YzAuNiwwLDEuMSwwLjcsMS4zLDFjMC41LDAuOCwxLjEsMSwxLjQsMSBjMC40LDAsMC43LTAuMSwwLjktMC4yYzAuMS0wLjcsMC40LTEuNCwxLTEuOGMtMi4zLTAuNS00LTEuOC00LTRjMC0xLjEsMC41LTIuMiwxLjItM0M3LjEsOC44LDcsOC4zLDcsNy42QzcsNy4yLDcsNi42LDcuMyw2IGMwLDAsMS40LDAsMi44LDEuM0MxMC42LDcuMSwxMS4zLDcsMTIsN3MxLjQsMC4xLDIsMC4zQzE1LjMsNiwxNi44LDYsMTYuOCw2QzE3LDYuNiwxNyw3LjIsMTcsNy42YzAsMC44LTAuMSwxLjItMC4yLDEuNCBjMC43LDAuOCwxLjIsMS44LDEuMiwzYzAsMi4yLTEuNywzLjUtNCw0YzAuNiwwLjUsMSwxLjQsMSwyLjN2Mi42YzAsMC4zLDAuMywwLjYsMC43LDAuNWMzLjctMS41LDYuMy01LjEsNi4zLTkuMyBDMjIsNi4xLDE2LjksMS40LDEwLjksMi4xeiI+PC9wYXRoPgo8L3N2Zz4="
+              }
               alt="GitHub"
             />
             GitHub
           </Box>
 
-          <Box className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
           >
             <img
               src="https://img.icons8.com/color/240/000000/java-coffee-cup-logo--v1.png"
               alt="Java"
-              width={96}
-              height={96}
+              className="w-24 h-24"
             />
             Java
           </Box>
 
-          <Box className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
           >
             <img
               src="https://img.icons8.com/color/96/000000/mysql-logo.png"
               alt="MySQL"
-              width={96}
-              height={96}
+              className="w-24 h-24"
             />
             MySQL
           </Box>
 
-          <Box className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
           >
             <img
               src="https://img.icons8.com/color/96/000000/python--v1.png"
               alt="Python"
-              width={96}
-              height={96}
+              className="w-24 h-24"
             />
             Python
           </Box>
 
-          <Box className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
           >
             <img
               src="https://img.icons8.com/external-those-icons-flat-those-icons/96/000000/external-PHP-programming-and-development-those-icons-flat-those-icons.png"
               alt="PHP"
-              width={96}
-              height={96}
+              className="w-24 h-24"
             />
             PHP
+          </Box>
+
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          >
+            <img
+              src="https://img.icons8.com/color/96/000000/git.png"
+              alt="Git"
+              className="w-24 h-24"
+            />
+            Git
+          </Box>
+
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          >
+            <img
+              src="https://img.icons8.com/color/96/null/flutter.png"
+              alt="Flutter"
+              className="w-24 h-24"
+            />
+            Flutter
+          </Box>
+
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          >
+            <img
+              src="https://www.svgrepo.com/show/452130/vue.svg"
+              alt="Vue JS"
+              className="w-24 h-24"
+            />
+            Vue.js
+          </Box>
+
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          >
+            <img
+              src="https://laravel.com/img/logomark.min.svg"
+              alt="Laravel"
+              className="w-24 h-24"
+            />
+            Laravel
+          </Box>
+
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          >
+            <img
+              src="https://www.svgrepo.com/show/452092/react.svg"
+              alt="React"
+              className="w-24 h-24"
+            />
+            React
+          </Box>
+
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          >
+            <img
+              src="https://www.svgrepo.com/show/354048/material-ui.svg"
+              alt="Material UI"
+              className="w-24 h-24"
+            />
+            Material UI
+          </Box>
+
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          >
+            <img
+              src="https://img.icons8.com/color/96/null/nodejs.png"
+              alt="Node JS"
+              className="w-24 h-24"
+            />
+            Node JS
+          </Box>
+
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          >
+            <img
+              src="https://img.icons8.com/color/96/null/chakra-ui.png"
+              alt="Chakra UI"
+              className="w-24 h-24"
+            />
+            Chakra UI
+          </Box>
+
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+          >
+            <img
+              src="https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-light-atom.svg"
+              alt="Vuetify"
+              className="w-24 h-24"
+            />
+            Vuetify
           </Box>
         </Stack>
       </Box>
