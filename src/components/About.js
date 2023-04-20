@@ -3,7 +3,7 @@ import {
   Flex,
   ListItem,
   Text,
-  Stack,
+  Grid,
   UnorderedList,
   useColorMode,
 } from "@chakra-ui/react";
@@ -105,9 +105,11 @@ export default function About() {
         <Text className="mt-20 mb-10 text-3xl font-bold xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl">
           Skills
         </Text>
-        <Stack
-          className="justify-center items-center flex-wrap font-medium xl:max-w-[1320px] mx-auto"
-          direction="row"
+        <Grid
+        templateColumns="repeat(auto-fill, minmax(110px, 1fr))"
+        gap={4}
+        maxW="1320px"
+        mx="auto"
         >
           <Box
             className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
@@ -115,7 +117,6 @@ export default function About() {
             <img
               src="https://img.icons8.com/color/240/000000/html-5--v1.png"
               alt="HTML5"
-              className="w-24 h-24"
             />
             HTML5
           </Box>
@@ -126,7 +127,6 @@ export default function About() {
             <img
               src="https://img.icons8.com/color/240/000000/css3.png"
               alt="CSS"
-              className="w-24 h-24"
             />
             CSS3
           </Box>
@@ -137,7 +137,6 @@ export default function About() {
             <img
               src="https://img.icons8.com/color/240/000000/javascript--v1.png"
               alt="JavaScript"
-              className="w-24 h-24"
             />
             JavaScript
           </Box>
@@ -148,7 +147,6 @@ export default function About() {
             <img
               src="https://img.icons8.com/color/240/000000/bootstrap.png"
               alt="Bootstrap"
-              className="w-24 h-24"
             />
             Bootstrap
           </Box>
@@ -173,7 +171,6 @@ export default function About() {
             <img
               src="https://img.icons8.com/color/240/000000/java-coffee-cup-logo--v1.png"
               alt="Java"
-              className="w-24 h-24"
             />
             Java
           </Box>
@@ -184,7 +181,6 @@ export default function About() {
             <img
               src="https://img.icons8.com/color/96/000000/mysql-logo.png"
               alt="MySQL"
-              className="w-24 h-24"
             />
             MySQL
           </Box>
@@ -195,7 +191,6 @@ export default function About() {
             <img
               src="https://img.icons8.com/color/96/000000/python--v1.png"
               alt="Python"
-              className="w-24 h-24"
             />
             Python
           </Box>
@@ -206,7 +201,6 @@ export default function About() {
             <img
               src="https://img.icons8.com/external-those-icons-flat-those-icons/96/000000/external-PHP-programming-and-development-those-icons-flat-those-icons.png"
               alt="PHP"
-              className="w-24 h-24"
             />
             PHP
           </Box>
@@ -217,7 +211,6 @@ export default function About() {
             <img
               src="https://img.icons8.com/color/96/000000/git.png"
               alt="Git"
-              className="w-24 h-24"
             />
             Git
           </Box>
@@ -228,7 +221,6 @@ export default function About() {
             <img
               src="https://img.icons8.com/color/96/null/flutter.png"
               alt="Flutter"
-              className="w-24 h-24"
             />
             Flutter
           </Box>
@@ -239,7 +231,6 @@ export default function About() {
             <img
               src="https://www.svgrepo.com/show/452130/vue.svg"
               alt="Vue JS"
-              className="w-24 h-24"
             />
             Vue.js
           </Box>
@@ -250,7 +241,7 @@ export default function About() {
             <img
               src="https://laravel.com/img/logomark.min.svg"
               alt="Laravel"
-              className="w-24 h-24"
+              width={96}
             />
             Laravel
           </Box>
@@ -261,7 +252,6 @@ export default function About() {
             <img
               src="https://www.svgrepo.com/show/452092/react.svg"
               alt="React"
-              className="w-24 h-24"
             />
             React
           </Box>
@@ -272,7 +262,6 @@ export default function About() {
             <img
               src="https://www.svgrepo.com/show/354048/material-ui.svg"
               alt="Material UI"
-              className="w-24 h-24"
             />
             Material UI
           </Box>
@@ -283,7 +272,6 @@ export default function About() {
             <img
               src="https://img.icons8.com/color/96/null/nodejs.png"
               alt="Node JS"
-              className="w-24 h-24"
             />
             Node JS
           </Box>
@@ -294,7 +282,6 @@ export default function About() {
             <img
               src="https://img.icons8.com/color/96/null/chakra-ui.png"
               alt="Chakra UI"
-              className="w-24 h-24"
             />
             Chakra UI
           </Box>
@@ -305,11 +292,20 @@ export default function About() {
             <img
               src="https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-light-atom.svg"
               alt="Vuetify"
-              className="w-24 h-24"
             />
             Vuetify
           </Box>
-        </Stack>
+          <Box
+            className={`${shadowColor[colorMode]} rounded-2xl p-4 hover:-translate-y-2 transition duration-250 flex flex-col justify-between`}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1920px-Nextjs-logo.svg.png?20230404233503"
+              alt="Vuetify"
+              className="mt-10"
+            />
+            Next.JS
+          </Box>
+        </Grid>
       </Box>
     </Box>
   );
