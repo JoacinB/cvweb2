@@ -30,7 +30,7 @@ export default function About() {
       color={textColor}
       px={8}
       py={5}
-      h={["auto", "auto", "auto", "100vh"]}
+      h={["auto", "auto", "auto", "100-full"]}
     >
       <Box className="mx-auto text-center">
         <Text className="mb-20 text-3xl font-bold xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl">
@@ -108,51 +108,62 @@ export default function About() {
         <Grid
         templateColumns="repeat(auto-fill, minmax(110px, 1fr))"
         gap={4}
-        maxW="1320px"
-        mx="auto"
+        className=" mx-auto m-auto text-center flex row flex-wrap justify-center text-xl font-semibold mb-10"
         >
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://img.icons8.com/color/240/000000/html-5--v1.png"
               alt="HTML5"
+              height={144}
+              width={144}
+              className="p-3"
             />
             HTML5
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://img.icons8.com/color/240/000000/css3.png"
               alt="CSS"
+              height={144}
+              width={144}
+              className="p-3"
             />
             CSS3
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://img.icons8.com/color/240/000000/javascript--v1.png"
               alt="JavaScript"
+              height={144}
+              width={144}
+              className="p-3"
             />
             JavaScript
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://img.icons8.com/color/240/000000/bootstrap.png"
               alt="Bootstrap"
+              height={144}
+              width={144}
+              className="p-3"
             />
             Bootstrap
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src={
@@ -161,147 +172,190 @@ export default function About() {
                   : "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iOTYiIGhlaWdodD0iOTYiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgogICAgPHBhdGggZD0iTTEwLjksMi4xYy00LjYsMC41LTguMyw0LjItOC44LDguN2MtMC41LDQuNywyLjIsOC45LDYuMywxMC41QzguNywyMS40LDksMjEuMiw5LDIwLjh2LTEuNmMwLDAtMC40LDAuMS0wLjksMC4xIGMtMS40LDAtMi0xLjItMi4xLTEuOWMtMC4xLTAuNC0wLjMtMC43LTAuNi0xQzUuMSwxNi4zLDUsMTYuMyw1LDE2LjJDNSwxNiw1LjMsMTYsNS40LDE2YzAuNiwwLDEuMSwwLjcsMS4zLDFjMC41LDAuOCwxLjEsMSwxLjQsMSBjMC40LDAsMC43LTAuMSwwLjktMC4yYzAuMS0wLjcsMC40LTEuNCwxLTEuOGMtMi4zLTAuNS00LTEuOC00LTRjMC0xLjEsMC41LTIuMiwxLjItM0M3LjEsOC44LDcsOC4zLDcsNy42QzcsNy4yLDcsNi42LDcuMyw2IGMwLDAsMS40LDAsMi44LDEuM0MxMC42LDcuMSwxMS4zLDcsMTIsN3MxLjQsMC4xLDIsMC4zQzE1LjMsNiwxNi44LDYsMTYuOCw2QzE3LDYuNiwxNyw3LjIsMTcsNy42YzAsMC44LTAuMSwxLjItMC4yLDEuNCBjMC43LDAuOCwxLjIsMS44LDEuMiwzYzAsMi4yLTEuNywzLjUtNCw0YzAuNiwwLjUsMSwxLjQsMSwyLjN2Mi42YzAsMC4zLDAuMywwLjYsMC43LDAuNWMzLjctMS41LDYuMy01LjEsNi4zLTkuMyBDMjIsNi4xLDE2LjksMS40LDEwLjksMi4xeiI+PC9wYXRoPgo8L3N2Zz4="
               }
               alt="GitHub"
+              height={144}
+              width={144}
+              className="p-3"
             />
             GitHub
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://img.icons8.com/color/240/000000/java-coffee-cup-logo--v1.png"
               alt="Java"
+              height={144}
+              width={144}
+              className="p-3"
             />
             Java
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://img.icons8.com/color/96/000000/mysql-logo.png"
               alt="MySQL"
+              height={144}
+              width={144}
+              className="p-3"
             />
             MySQL
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://img.icons8.com/color/96/000000/python--v1.png"
               alt="Python"
+              height={144}
+              width={144}
+              className="p-3"
             />
             Python
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://img.icons8.com/external-those-icons-flat-those-icons/96/000000/external-PHP-programming-and-development-those-icons-flat-those-icons.png"
               alt="PHP"
+              height={144}
+              width={144}
+              className="p-3"
             />
             PHP
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://img.icons8.com/color/96/000000/git.png"
               alt="Git"
+              height={144}
+              width={144}
+              className="p-3"
             />
             Git
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://img.icons8.com/color/96/null/flutter.png"
               alt="Flutter"
+              height={144}
+              width={144}
+              className="p-3"
             />
             Flutter
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://www.svgrepo.com/show/452130/vue.svg"
               alt="Vue JS"
+              height={144}
+              width={144}
+              className="p-3"
             />
             Vue.js
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://laravel.com/img/logomark.min.svg"
               alt="Laravel"
-              width={96}
+              height={144}
+              width={144}
+              className="p-3"
             />
             Laravel
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://www.svgrepo.com/show/452092/react.svg"
               alt="React"
+              height={144}
+              width={144}
+              className="p-3"
             />
             React
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://www.svgrepo.com/show/354048/material-ui.svg"
               alt="Material UI"
+              height={144}
+              width={144}
+              className="p-3"
             />
             Material UI
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://img.icons8.com/color/96/null/nodejs.png"
               alt="Node JS"
+              height={144}
+              width={144}
+              className="p-3"
             />
             Node JS
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://img.icons8.com/color/96/null/chakra-ui.png"
               alt="Chakra UI"
+              height={144}
+              width={144}
+              className="p-3"
             />
             Chakra UI
           </Box>
 
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-3 hover:-translate-y-2 transition duration-250`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
               src="https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-light-atom.svg"
               alt="Vuetify"
+              height={144}
+              width={144}
+              className="p-3"
             />
             Vuetify
           </Box>
           <Box
-            className={`${shadowColor[colorMode]} rounded-2xl p-4 hover:-translate-y-2 transition duration-250 flex flex-col justify-between`}
+            className={`${shadowColor[colorMode]} rounded-2xl hover:-translate-y-2 transition duration-250 flex flex-col items-center justify-center`}
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1920px-Nextjs-logo.svg.png?20230404233503"
-              alt="Vuetify"
-              className="mt-10"
+              src="https://cdn.cdnlogo.com/logos/n/80/next-js.svg"
+              alt="Next JS"
+              height={144}
+              width={144}
+              className="p-3"
             />
             Next.JS
           </Box>
